@@ -12,6 +12,7 @@
 		419209C01E128A2600C96297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419209BF1E128A2600C96297 /* Assets.xcassets */; };
 		419209C31E128A2600C96297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419209C11E128A2600C96297 /* LaunchScreen.storyboard */; };
 		419209D01E12B52600C96297 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419209CF1E12B52600C96297 /* Memo.swift */; };
+		419209D21E12BDF700C96297 /* MemoAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419209D11E12BDF700C96297 /* MemoAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		419209C21E128A2600C96297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419209C41E128A2600C96297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419209CF1E12B52600C96297 /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		419209D11E12BDF700C96297 /* MemoAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				419209CF1E12B52600C96297 /* Memo.swift */,
+				419209D11E12BDF700C96297 /* MemoAudio.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				419209D01E12B52600C96297 /* Memo.swift in Sources */,
 				419209BB1E128A2600C96297 /* ViewController.swift in Sources */,
+				419209D21E12BDF700C96297 /* MemoAudio.swift in Sources */,
 				419209B91E128A2600C96297 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
