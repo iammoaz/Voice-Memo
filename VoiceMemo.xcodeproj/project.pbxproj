@@ -54,14 +54,54 @@
 		419209B71E128A2600C96297 /* VoiceMemo */ = {
 			isa = PBXGroup;
 			children = (
-				419209B81E128A2600C96297 /* AppDelegate.swift */,
-				419209BA1E128A2600C96297 /* ViewController.swift */,
+				419209CD1E128D5200C96297 /* Model */,
+				419209CC1E128D4800C96297 /* View */,
+				419209CB1E128D3200C96297 /* Controller */,
+				419209CE1E128DF000C96297 /* Resources */,
+				419209CA1E128A3700C96297 /* Supporting Files */,
 				419209BC1E128A2600C96297 /* Main.storyboard */,
-				419209BF1E128A2600C96297 /* Assets.xcassets */,
 				419209C11E128A2600C96297 /* LaunchScreen.storyboard */,
-				419209C41E128A2600C96297 /* Info.plist */,
 			);
 			path = VoiceMemo;
+			sourceTree = "<group>";
+		};
+		419209CA1E128A3700C96297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				419209C41E128A2600C96297 /* Info.plist */,
+				419209B81E128A2600C96297 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		419209CB1E128D3200C96297 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				419209BA1E128A2600C96297 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		419209CC1E128D4800C96297 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		419209CD1E128D5200C96297 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		419209CE1E128DF000C96297 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				419209BF1E128A2600C96297 /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
