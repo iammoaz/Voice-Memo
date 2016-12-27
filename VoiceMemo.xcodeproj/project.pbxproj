@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		419209B91E128A2600C96297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419209B81E128A2600C96297 /* AppDelegate.swift */; };
 		419209BB1E128A2600C96297 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419209BA1E128A2600C96297 /* ViewController.swift */; };
-		419209BE1E128A2600C96297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419209BC1E128A2600C96297 /* Main.storyboard */; };
 		419209C01E128A2600C96297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419209BF1E128A2600C96297 /* Assets.xcassets */; };
 		419209C31E128A2600C96297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419209C11E128A2600C96297 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		419209B51E128A2600C96297 /* VoiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419209B81E128A2600C96297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		419209BA1E128A2600C96297 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		419209BD1E128A2600C96297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		419209BF1E128A2600C96297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419209C21E128A2600C96297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419209C41E128A2600C96297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				419209CB1E128D3200C96297 /* Controller */,
 				419209CE1E128DF000C96297 /* Resources */,
 				419209CA1E128A3700C96297 /* Supporting Files */,
-				419209BC1E128A2600C96297 /* Main.storyboard */,
 				419209C11E128A2600C96297 /* LaunchScreen.storyboard */,
 			);
 			path = VoiceMemo;
@@ -166,7 +163,6 @@
 			files = (
 				419209C31E128A2600C96297 /* LaunchScreen.storyboard in Resources */,
 				419209C01E128A2600C96297 /* Assets.xcassets in Resources */,
-				419209BE1E128A2600C96297 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,14 +181,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		419209BC1E128A2600C96297 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				419209BD1E128A2600C96297 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		419209C11E128A2600C96297 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
