@@ -37,6 +37,9 @@ class ViewController: UIViewController {
         return button
     }()
     
+    // MARK: - Audio Properties
+    let sessionManager = MemoSessionManager.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -45,6 +48,43 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillLayoutSubviews() {
+        let headerView = UIView()
+        headerView.backgroundColor = .black
+        headerView.translatesAutoresizingMaskIntoConstraints = false
+        headerView.addSubview(recordButton)
+        headerView.addSubview(stopButton)
+        
+        NSLayoutConstraint.activate([
+            headerView.heightAnchor.constraint(equalToConstant: 120.0),
+            headerView.centerXAnchor.constraint(equalTo: recordButton.centerXAnchor),
+            headerView.centerYAnchor.constraint(equalTo: recordButton.centerYAnchor),
+            headerView.centerXAnchor.constraint(equalTo: stopButton.centerXAnchor),
+            headerView.centerYAnchor.constraint(equalTo: stopButton.centerYAnchor),
+            ])
+        
+        let stackView = UIStackView(arrangedSubviews: [headerView, tableView])
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        stackView.distribution = .equalSpacing
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stackView)
+        
+        NSLayoutConstraint.activate([
+            view.leftAnchor.constraint(equalTo: stackView.leftAnchor),
+            self.topLayoutGuide.bottomAnchor.constraint(equalTo: stackView.topAnchor),
+            view.rightAnchor.constraint(equalTo: stackView.rightAnchor),
+            view.bottomAnchor.constraint(equalTo: stackView.bottomAnchor),
+            // Header View
+            headerView.rightAnchor.constraint(equalTo: stackView.rightAnchor),
+            headerView.leftAnchor.constraint(equalTo: stackView.leftAnchor),
+            headerView.bottomAnchor.constraint(equalTo: tableView.topAnchor),
+            // Table View
+            tableView.rightAnchor.constraint(equalTo: stackView.rightAnchor),
+            tableView.leftAnchor.constraint(equalTo: stackView.leftAnchor)
+            ])
     }
     
     
