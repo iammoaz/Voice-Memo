@@ -9,16 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: CGRect.zero, style: .plain)
@@ -26,8 +16,50 @@ class ViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
         
+    }()
+    
+    lazy var recordButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Record", for: .normal)
+        button.setTitleColor(.red, for: .normal)
+        button.addTarget(self, action: #selector(self.startRecording), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    lazy var stopButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Stop Recording", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.addTarget(self, action: #selector(self.stopRecording), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.isHidden = true
+        return button
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func startRecording() {
+        toggleRecordButton(on: false)
+    }
+    
+    func stopRecording() {
+        toggleRecordButton(on: true)
     }
 
+    private func toggleRecordButton(on flag: Bool) {
+        recordButton.isHidden = !flag
+        stopButton.isHidden = flag
+    }
 
 }
 

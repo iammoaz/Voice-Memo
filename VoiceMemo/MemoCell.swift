@@ -9,6 +9,10 @@
 import UIKit
 
 class MemoCell: UITableViewCell {
+    
+    static var reuseIdentifier: String {
+        return "MemoCell"
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
