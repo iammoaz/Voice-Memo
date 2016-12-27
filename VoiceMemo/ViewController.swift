@@ -19,6 +19,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: CGRect.zero, style: .plain)
+        tableView.register(MemoCell.self, forCellReuseIdentifier: MemoCell.reuseIdentifier)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+        
+    }
 
 
 }
